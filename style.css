@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 *{
   margin:0;
   padding:0;
@@ -253,6 +258,11 @@ body{
   gap: 60px;
   align-items: center;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .profile-img img {
   width: 260px;
   height: 260px;
@@ -294,7 +304,7 @@ font-family: "Cinzel Decorative ", serif;
   display: flex;
   justify-content: center; 
   align-items: center;     
-  flex-wrap: nowrap;      
+  flex-wrap: wrap;      
   gap: 100px;              
 }
 .skill {
@@ -456,48 +466,7 @@ font-family: "Cinzel Decorative ", serif;
   to { transform: rotateY(360deg); }
 }
 
-/* SECTION CERTIFICATES */
-#certificates {
-  text-align: center;
-  padding: 120px 0;
-  margin-bottom: 160px; 
-}
-.certificates-title {
-  text-align: center;
-  font-family: "Cinzel Decorative", serif;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #ff4fa1;
-  margin-bottom: 96px; 
-  text-shadow: 0 0 10px rgba(72, 5, 88, 0.4),
-               0 0 20px rgba(209, 184, 127, 0.2);
-}
-.cert-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.cert-card {
-  position: relative;
-  width: 220px;
-  height: 140px;
-  border-radius: 15px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  box-shadow: 0 5px 15px rgba(235, 42, 155, 0.774);
-}
-.cert-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.cert-card:hover {
-  transform: scale(1.05);
-}
+
 
 /* SECTION CONTACT */
 .social-container {
@@ -581,16 +550,27 @@ font-family: "Cinzel Decorative ", serif;
   text-shadow: 0 0 8px  rgba(159, 43, 236, 0.952);
 }
 
-@media (max-width: 768px) {
 
+  @media (max-width: 768px) {
   #hero {
-    padding-top: 120px;   
-    min-height: auto;
+    padding: 120px 20px 60px;
+    text-align: center;
   }
 
   .hero-content {
-    margin-top: 0;
-    gap: 20px;
+    flex-direction: column;
+  }
+
+  .hero-text h1 span {
+    font-size: 3.2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
   }
 
   .contact-container {
@@ -673,9 +653,48 @@ font-family: "Cinzel Decorative ", serif;
   .contact-title {
     font-size: 32px;
   }
+ .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
 }
 
+@media (max-width: 768px) {
+  .wave-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .wave-circle span {
+    font-size: 30px;
+  }
+
+  .mini-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    animation: none;
+    overflow-x: auto;
+    padding: 20px;
+  }
+
+  .carousel .card {
+    position: relative;
+    transform: none !important;
+    min-width: 220px;
+    height: auto;
+  }
+}
 
 
 
