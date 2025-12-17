@@ -47,12 +47,19 @@ body{
 
   animation: loadingMove 2s infinite linear;
 }
+
 .sub-name{
-  margin-top:6px;
-  font-size:18px;
+  margin-top:10px;
+  font-size:25px;
   letter-spacing:4px;
-  color:#7a3cff;
-  opacity:0.8;
+ background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #a44dff
+  );
+   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  opacity:0.8;
 }
 
 @keyframes loadingMove{
@@ -73,6 +80,7 @@ body{
 
 <div id="splash">
   <div class="brackets">&lt; &gt;</div>
+
   <div class="sub-name">NIHAD ZR</div>
 </div>
 
@@ -86,4 +94,3 @@ setTimeout(() => {
 
 </body>
 </html>
-
