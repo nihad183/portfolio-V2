@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio ZR</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial, sans-serif;
+}
+
+#splash{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  animation: fadeOut 1s ease forwards;
+  animation-delay:5s;
+}
+
+.brackets{
+  font-size:100px;
+  font-weight:bold;
+
+  background: linear-gradient(
+    90deg,
+    #ff4fa1 0%,
+    #8f3bff 50%,
+    #ff4fa1 100%
+  );
+  background-size:200% 100%;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: loadingMove 2s infinite linear;
+}
+
+.sub-name{
+  margin-top:10px;
+  font-size:25px;
+  letter-spacing:4px;
+ background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #a44dff
+  );
+   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  opacity:0.8;
+}
+
+@keyframes loadingMove{
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes fadeOut{
+  to{
+    opacity:0;
+    visibility:hidden;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="splash">
+  <div class="brackets">&lt; &gt;</div>
+
+  <div class="sub-name">NIHAD ZR</div>
+</div>
+
+<script>
+setTimeout(() => {
+  window.location.href = "portfolio.html";
+}, 2000);
+</script>
+
+
+
+</body>
+</html>
