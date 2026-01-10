@@ -507,11 +507,17 @@ font-family: "Cinzel Decorative ", serif;
   box-shadow: 0 0 35px rgba(200, 100, 255, 0.8);
 }
 .carousel .card:nth-child(1) { transform: rotateY(0deg) translateZ(330px); }
-.carousel .card:nth-child(2) { transform: rotateY(60deg) translateZ(330px); }
-.carousel .card:nth-child(3) { transform: rotateY(120deg) translateZ(330px); }
-.carousel .card:nth-child(4) { transform: rotateY(180deg) translateZ(330px); }
-.carousel .card:nth-child(5) { transform: rotateY(240deg) translateZ(330px); }
-.carousel .card:nth-child(6) { transform: rotateY(300deg) translateZ(330px); }
+.carousel .card:nth-child(2) { transform: rotateY(51.43deg) translateZ(330px); }
+.carousel .card:nth-child(3) { transform: rotateY(102.86deg) translateZ(330px); }
+.carousel .card:nth-child(4) { transform: rotateY(154.29deg) translateZ(330px); }
+.carousel .card:nth-child(5) { transform: rotateY(205.72deg) translateZ(330px); }
+.carousel .card:nth-child(6) { transform: rotateY(257.15deg) translateZ(330px); }
+.carousel .card:nth-child(7) { transform: rotateY(308.58deg) translateZ(330px); }
+
+.carousel {
+  animation: rotate 16s infinite linear;
+}
+
 
 
 @keyframes rotate {
